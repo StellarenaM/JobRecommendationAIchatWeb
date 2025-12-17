@@ -1,0 +1,9 @@
+axios
+element-plus
+pinia
+vue
+vue-router
+vite
+@vitejs/plugin-vue
+vite-plugin-vue-devtools
+

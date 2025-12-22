@@ -183,9 +183,7 @@ sequenceDiagram
 
 ---
 
-## 5. 项目启动
-- sh
-# 本地开发
+## 5. 本地开发
 环境要求
 `Node >=20.19.0（或 >=22.12.0）`
 npm / pnpm / yarn（示例以 npm 为准）
@@ -196,9 +194,8 @@ npm / pnpm / yarn（示例以 npm 为准）
 `npm run dev`
 默认使用 Vite 开发服务器`（通常为 http://localhost:5173）`， 通过代理 / 直连方式访问后端 `http://127.0.0.1:8000`。
 
-# 构建与质量检查
+# 构建与质量
 生产构建
 `npm run build`
--
 
 默认通过 Vite 启动开发服务器，前端在本地运行并通过 `/api/*` 与后端交互。

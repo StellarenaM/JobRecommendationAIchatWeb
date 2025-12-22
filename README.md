@@ -28,7 +28,7 @@ Frontend/
   src/
     api/
       chat.js        # 聊天相关接口封装
-      jobs.js        # 岗位相关接口封装（如有）
+      jobs.js        # 岗位相关接口封装
     components/
       ChatInput.vue  # 输入框与发送按钮
       ChatSidebar.vue# 会话列表与会话切换
@@ -185,14 +185,19 @@ sequenceDiagram
 
 ## 5. 项目启动
 
-```sh
-npm install
+本地开发
+环境要求
+`Node >=20.19.0（或 >=22.12.0）`
+npm / pnpm / yarn（示例以 npm 为准）
+岗位推荐 AI Agent 后端服务，默认地址：`http://127.0.0.5000`
+安装依赖
+`npm install`
+启动开发服务器
+`npm run dev`
+默认使用 Vite 开发服务器`（通常为 http://localhost:5173）`， 通过代理 / 直连方式访问后端 `http://127.0.0.1:8000`。
 
-# 开发环境热更新
-npm run dev
-
-# 生产构建
-npm run build
-```
+构建与质量检查
+生产构建
+`npm run build`
 
 默认通过 Vite 启动开发服务器，前端在本地运行并通过 `/api/*` 与后端交互。
